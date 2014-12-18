@@ -1,5 +1,5 @@
 module Piggybak
-  class CartController < ApplicationController
+  class CartController < Microsite::ApplicationController
     def show
       @cart = Cart.new(cookies["cart"])
       @cart.update_quantities
