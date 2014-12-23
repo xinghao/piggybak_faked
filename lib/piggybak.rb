@@ -1,12 +1,10 @@
 require 'piggybak/engine'
-require 'piggybak/config'
+
 require 'acts_as_sellable'
+require 'acts_as_sellable_with_variants'
 require 'acts_as_orderer'
 require 'acts_as_changer'
 require 'active_merchant'
-require 'formatted_changes'
-require 'mask_submissions'
-require 'rack-ssl-enforcer'
 
 module Piggybak
   def self.config(entity = nil, &block)

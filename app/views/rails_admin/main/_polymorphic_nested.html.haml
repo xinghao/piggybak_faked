@@ -1,5 +1,0 @@
-- if form.object.new_record?
-  = form.select "line_item_type", Piggybak::LineItem.line_item_type_select, {}, :onchange => "piggybak_rails_admin.toggle_line_item($(this));"
-- else
-  = form.hidden_field "line_item_type"
-  = form.object.line_item_type

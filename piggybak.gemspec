@@ -17,7 +17,4 @@ Gem::Specification.new do |s|
   s.executables = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files = Dir["spec/*"]
   
-  s.add_dependency "countries"
-  s.add_dependency "activemerchant"
-  s.add_dependency "rack-ssl-enforcer"
 end
